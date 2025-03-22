@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Space Mono";
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 10px;
+}
+nav span{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+#view-all{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    font-size: 18px;
+    color: black;
+    padding: 20px 10px;
+}
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.sections section{
+    max-width: 850px;
+    width: 820px;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    height: 120vh;
+    text-align: right;
+    flex-direction: column;
+}
+.sections section .card{
+    height: 500px;
+    width: 100%;
+    padding: 100px;
+    background: url(image/image1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sections section .imgs{
+    display: flex;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 300px;
+    background-image: url(video.gif);
+    cursor: pointer;
+}
+
+.sections section#sec-2 .card{
+    background: url(image/image2.avif);
+}
+.sections section#sec-3 .card{
+    background: url(image/image3.avif);
+}
+.sections section#sec-4 .card{
+    background: url(image/image4.avif);
+}
+.sections section#sec-5 .card{
+    background: url(image/image5.avif);
+}
+.sections section#sec-6 .card{
+    background: url(image/image6.avif);
+}
+
+.sections {
+    transition: background-color 1s ease-in-out;
+}
+.star {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: -75px;
+    left: 0px;
+    transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+.star .line {
+    position: absolute;
+    background-color: black;
+    width: 5px;
+    height: 150px;
+    top: 0;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star .line:nth-child(1)  { transform: translateX(-50%) rotate(0deg); }
+.star .line:nth-child(2)  { transform: translateX(-50%) rotate(22.5deg); }
+.star .line:nth-child(3)  { transform: translateX(-50%) rotate(45deg); }
+.star .line:nth-child(4)  { transform: translateX(-50%) rotate(67.5deg); }
+.star .line:nth-child(5)  { transform: translateX(-50%) rotate(90deg); }
+.star .line:nth-child(6)  { transform: translateX(-50%) rotate(112.5deg); }
+.star .line:nth-child(7)  { transform: translateX(-50%) rotate(135deg); }
+.star .line:nth-child(8)  { transform: translateX(-50%) rotate(157.5deg); }
+.star .line:nth-child(9)  { transform: translateX(-50%) rotate(180deg); }
+.star .line:nth-child(10) { transform: translateX(-50%) rotate(202.5deg); }
+.star .line:nth-child(11) { transform: translateX(-50%) rotate(225deg); }
+.star .line:nth-child(12) { transform: translateX(-50%) rotate(247.5deg); }
+.star .line:nth-child(13) { transform: translateX(-50%) rotate(270deg); }
+.star .line:nth-child(14) { transform: translateX(-50%) rotate(292.5deg); }
+.star .line:nth-child(15) { transform: translateX(-50%) rotate(315deg); }
+.star .line:nth-child(16) { transform: translateX(-50%) rotate(337.5deg); }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 200px;
+    background: red;
+    color: white;
+}
+footer span{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.image{
+    background-image: url(image/image7.avif);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+footer section.bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer section.bot section{
+    display: flex;
+    gap: 30px;
+}

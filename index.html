@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Pam</p>
+        <p>Info</p>
+        <p>Projects(4)</p>
+        <span>
+            <p style="color: pink;">Brands and mobile Agency</p>
+            <p>Some text about the brand and something as you can possible Some text about the brand and something as you can possible</p>
+        </span>
+    </nav>
+    <div id="view-all">
+        <p>Project<br>Work</p>
+        <h3>Heading</h3>
+        <a href="">View All Works</a>
+    </div>
+    <div class="sections">
+        <section id="sec-1">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+    
+        <section id="sec-2">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+    
+        <section id="sec-3">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-4">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-5">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-6">
+            <p>Fratlu Bostil</p>
+            <div class="card">
+                <div class="imgs">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="image">
+
+    </div>
+
+    <footer id="footer">
+        <span>
+            <p>pan</p>
+            <p>About Us<br>Lenghthy About the website little <br>may be small about something all
+            <br>small about something
+            </p>
+            <section>
+                <p>Contact Us</p>
+                <p>298, South Street</p>
+                <p>Thirubuvanam</p>
+            </section>
+        </span>
+        <section class="bot">
+            <section>
+                <p>Contact@gmail.com</p>
+                <p>+91 8489107935</p>
+            </section>
+            <p>Copyrights At 2025</p>
+        </section>
+    </footer>
+</body>
+</html>
+<script>
+    window.addEventListener("scroll", function () {
+        let sections = document.querySelectorAll("section");
+        let scrollPosition = window.scrollY + window.innerHeight / 2; // Adjust to detect when section is in view
+        let mainSection = document.querySelector(".sections");
+
+        sections.forEach(section => {
+            let sectionTop = section.offsetTop;
+            let sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                let color = "white"; // Default color for sec-1
+                
+                if (section.id === "sec-2") {
+                    color = "mediumseagreen";
+                } else if (section.id === "sec-3") {
+                    color = "yellow";
+                }
+                else if (section.id === "sec-4") {
+                    color = "grey";
+                }
+                else if (section.id === "sec-5") {
+                    color = "pink";
+                }
+                else if (section.id === "sec-6") {
+                    color = "red";
+                }
+                
+                mainSection.style.backgroundColor = color;
+            }
+        });
+    });
+</script>
+<div class="star">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+<script>
+    document.addEventListener("scroll", function () {
+        let footer = document.getElementById("footer");
+        let star = document.querySelector(".star");
+
+        if (isElementInViewport(footer)) {
+            star.style.bottom = "20px";
+            star.style.left = "20px";
+        } else {
+            star.style.bottom = "-75px";
+            star.style.left = "0px";
+        }
+    });
+
+    function isElementInViewport(el) {
+        let rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+    }
+
+</script>
